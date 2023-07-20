@@ -5,6 +5,9 @@ import { Inter } from 'next/font/google'
 import Header from '@/app/componets/layout/header'
 import Footer from '@/app/componets/layout/footer'
 import { RecoilRoot } from 'recoil'
+import Image from 'next/image'
+import img from '@/public/images/myImg.jpg'
+
 const inter = Inter({ subsets: ['latin'] })
 
 export const metadata: Metadata = {
@@ -17,6 +20,7 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
         <html lang="en">
             <body className={inter.className}>
                 <RecoilRoot>
+                    <Image src={img} alt="img" className="fixed m-0 w-screen h-screen -z-[100]"></Image>
                     <div className="flex flex-col h-screen">
                         <div className="flex-1">
                             <Header></Header>

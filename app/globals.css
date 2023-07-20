@@ -1,3 +1,4 @@
+@import url('https://fonts.googleapis.com/css2?family=Caveat&family=Lobster&display=swap');
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
@@ -5,8 +6,18 @@
 html {
     @apply h-full;
 }
-
+* {
+    font-family: 'Caveat', cursive;
+}
 .card {
-    @apply flex justify-center w-2/4 max-w-sm bg-white border border-gray-200 rounded-lg shadow 
+    @apply flex justify-evenly  items-center w-3/5 h-[700px] max-w-5xl bg-white border border-gray-200 rounded-3xl shadow 
     hover:bg-gray-100 dark:bg-gray-800 dark:border-gray-700 dark:hover:bg-gray-700;
+}
+
+p {
+    @apply text-2xl;
+}
+
+.img {
+    @apply w-2/5 h-auto;
 }

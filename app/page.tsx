@@ -8,19 +8,13 @@ export default function Home() {
     return (
         <div>
             <div id="home"></div>
-            <div className="p-96" id="about">
+            <div className="pt-6" id="about">
                 <About></About>
             </div>
-            <div className="p-96">
-                <About></About>
-            </div>
-            <div className="p-96">
-                <About></About>
-            </div>
-            <div className="p-96" id="skills">
+            <div className="p-36" id="skills">
                 <Skills></Skills>
             </div>
-            <div className="p-96" id="project">
+            <div className="p-36" id="project">
                 <Project></Project>
             </div>
         </div>

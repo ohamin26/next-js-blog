@@ -4,26 +4,30 @@ import { Link } from 'react-scroll'
 import Links from 'next/link'
 
 export default function Header() {
-    const onClick = () => {
+    {
+        /*const onClick = () => {
         const targetElement = document.getElementById('skills')
         if (targetElement) {
             targetElement.scrollIntoView()
         }
     }
+*/
+    }
+
+    const onClick = () => {
+        window.scrollTo({ top: 0, behavior: 'smooth' })
+    }
+
     return (
-        <header className="sticky top-0">
-            <nav className="flex justify-between space-x-3 items-center h-full m-1 uppercase">
-                <h1 className="font-bold">
-                    <Links href="/">blog</Links>
-                </h1>
-                <ul className="flex justify-between space-x-3 ">
+        <header className="sticky top-0 grid grid-rows-2 justify-center" id="header">
+            <h1 className="flex justify-center text-5xl font">portfolio</h1>
+            <nav className="flex justify-around items-center h-full m-1 uppercase">
+                <ul className="flex justify-between space-x-3 cursor-pointer">
                     <li>
                         <Links href="/">home</Links>
                     </li>
                     <li>
-                        <Link to="about" spy={true} smooth={true}>
-                            about
-                        </Link>
+                        <a onClick={onClick}>about</a>
                     </li>
                     <li>
                         <Link to="skills" spy={true} smooth={true}>

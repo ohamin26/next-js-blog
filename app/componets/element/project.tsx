@@ -1,8 +1,8 @@
 export default function project() {
     return (
-        <div className="flex justify-center">
+        <div className="flex justify-center ">
             <div className="card">
-                <h1>project</h1>
+                <p>project</p>
             </div>
         </div>
     )

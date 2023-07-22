@@ -10,14 +10,18 @@ html {
     font-family: 'Caveat', cursive;
 }
 .card {
-    @apply flex justify-evenly  items-center w-3/5 h-[700px] max-w-5xl bg-white border border-gray-200 rounded-3xl shadow 
+    @apply flex justify-evenly  items-center w-3/5 h-[700px] max-w-5xl bg-white border border-gray-200 rounded-3xl shadow opacity-90
     hover:bg-gray-100 dark:bg-gray-800 dark:border-gray-700 dark:hover:bg-gray-700;
 }
 
+.card_skills {
+    @apply grid auto-rows-auto justify-center items-center w-3/5 h-[700px] max-w-5xl bg-white border border-gray-200 rounded-3xl shadow opacity-90
+    hover:bg-gray-100 dark:bg-gray-800 dark:border-gray-700 dark:hover:bg-gray-700;
+}
 p {
-    @apply text-2xl;
+    @apply text-2xl opacity-100;
 }
 
 .img {
-    @apply w-2/5 h-auto;
+    @apply w-2/5 h-auto rounded-full;
 }

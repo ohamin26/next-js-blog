@@ -1,17 +1,15 @@
 'use client'
-import Image from 'next/image'
 import About from '@/app/componets/element/about'
 import Skills from '@/app/componets/element/skills'
 import Project from '@/app/componets/element/project'
-
+import { useScroll } from './componets/hooks/useScroll'
 export default function Home() {
     return (
         <div>
-            <div id="home"></div>
-            <div className="pt-6" id="about">
+            <div className="pt-5 pb-1" id="about">
                 <About></About>
             </div>
-            <div className="p-36" id="skills">
+            <div className="p-36 " id="skills">
                 <Skills></Skills>
             </div>
             <div className="p-36" id="project">

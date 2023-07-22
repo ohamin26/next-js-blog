@@ -6,7 +6,7 @@ import Header from '@/app/componets/layout/header'
 import Footer from '@/app/componets/layout/footer'
 import { RecoilRoot } from 'recoil'
 import Image from 'next/image'
-import img from '@/public/images/myImg.jpg'
+import img from '@/public/images_black/myImg.jpg'
 
 const inter = Inter({ subsets: ['latin'] })
 

@@ -15,11 +15,38 @@ html {
 }
 
 .card_skills {
-    @apply grid auto-rows-auto justify-center items-center w-3/5 h-[700px] max-w-5xl bg-white border border-gray-200 rounded-3xl shadow opacity-90
-    hover:bg-gray-100 dark:bg-gray-800 dark:border-gray-700 dark:hover:bg-gray-700;
+    @apply grid grid-rows-[150px_minmax(0px,_1fr)_600px] items-center w-full h-[700px] max-w-5xl bg-white border border-gray-200 rounded-3xl shadow opacity-90
+    hover:bg-gray-100 dark:bg-gray-800 dark:border-gray-700 dark:hover:bg-gray-700
+    sm:grid-rows-[100px_minmax(0px,_1fr)_auto]
+    xs:grid-rows-[100px_minmax(0px,_1fr)_auto]
+    xs:overflow-scroll;
 }
+
+.card_skill {
+    @apply w-[20vw] h-[8vh] max-w-5xl bg-white border border-gray-200 rounded-3xl shadow opacity-90
+    hover:bg-gray-100 dark:bg-gray-800 dark:border-gray-700 dark:hover:bg-gray-700
+    xs:w-[15vw] xs:h-[5vh];
+}
+.card_img {
+    @apply w-3/5 h-fit bg-white border border-gray-200 rounded-3xl shadow opacity-90 mb-16
+    sm:w-20 sm:h-20
+    xs:w-20 xs:h-20
+    xs:mt-4
+    hover:opacity-0 dark:bg-gray-800 dark:border-gray-700 dark:hover:bg-gray-700
+    top-0 left-0;
+}
+.card_color_img {
+    @apply w-3/5 h-fit bg-white border border-gray-200 rounded-3xl shadow mb-16
+    sm:w-20 sm:h-20
+    xs:w-20 xs:h-20
+    xs:mt-4
+    opacity-0
+    absolute top-0 left-0
+    hover:opacity-90 dark:bg-gray-800 dark:border-gray-700 dark:hover:bg-gray-700;
+}
+
 p {
-    @apply text-2xl opacity-100;
+    @apply text-2xl opacity-100 text-center;
 }
 
 .img {

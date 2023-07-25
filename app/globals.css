@@ -15,15 +15,15 @@ html {
 }
 
 .card_skills {
-    @apply grid grid-rows-[150px_minmax(0px,_1fr)_600px] items-center w-full h-[700px] max-w-5xl bg-white border border-gray-200 rounded-3xl shadow opacity-90
+    @apply grid grid-rows-[150px_600px] w-full h-[700px] max-w-5xl bg-white border border-gray-200 rounded-3xl shadow opacity-90
     hover:bg-gray-100 dark:bg-gray-800 dark:border-gray-700 dark:hover:bg-gray-700
-    sm:grid-rows-[100px_minmax(0px,_1fr)_auto]
-    xs:grid-rows-[100px_minmax(0px,_1fr)_auto]
+    sm:grid-rows-[100px_auto]
+    xs:grid-rows-[100px_auto]
     xs:overflow-scroll;
 }
 
 .card_skill {
-    @apply w-[20vw] h-[8vh] max-w-5xl bg-white border border-gray-200 rounded-3xl shadow opacity-90
+    @apply w-[30vw] h-[8vh] max-w-5xl bg-white border border-gray-200 rounded-3xl shadow opacity-90
     hover:bg-gray-100 dark:bg-gray-800 dark:border-gray-700 dark:hover:bg-gray-700
     xs:w-[15vw] xs:h-[5vh];
 }
@@ -32,8 +32,7 @@ html {
     sm:w-20 sm:h-20
     xs:w-20 xs:h-20
     xs:mt-4
-    hover:opacity-0 dark:bg-gray-800 dark:border-gray-700 dark:hover:bg-gray-700
-    top-0 left-0;
+    hover:opacity-0 dark:bg-gray-800 dark:border-gray-700 dark:hover:bg-gray-700;
 }
 .card_color_img {
     @apply w-3/5 h-fit bg-white border border-gray-200 rounded-3xl shadow mb-16

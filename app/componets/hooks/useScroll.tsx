@@ -1,4 +1,5 @@
-import { useCallback, useRef, useEffect } from 'react'
+import { useCallback, useRef, useEffect, useState } from 'react'
+import { Typing } from '@/app/componets/hooks/useTyping'
 
 export const useScroll = (direction = 'up', duration = 1, delay = 0) => {
     const element = useRef<any>()

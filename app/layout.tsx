@@ -1,7 +1,7 @@
 'use client'
 import './globals.css'
 import type { Metadata } from 'next'
-import { Inter } from 'next/font/google'
+import { Content, Inter } from 'next/font/google'
 import Header from '@/app/componets/layout/header'
 import Footer from '@/app/componets/layout/footer'
 import { RecoilRoot } from 'recoil'
@@ -18,16 +18,18 @@ export const metadata: Metadata = {
 export default function RootLayout({ children }: { children: React.ReactNode }) {
     return (
         <html lang="en">
+            <head>
+                <meta content="width=device-width, initial-scale=1" name="viewport" />
+            </head>
             <body className={inter.className}>
                 <RecoilRoot>
-                    <Image src={img} alt="img" className="fixed m-0 w-screen h-screen -z-[100]"></Image>
-                    <div className="flex flex-col h-screen">
-                        <div className="flex-1">
-                            <Header></Header>
-                            {children}
-                        </div>
+                    {/*<Image src={img} alt="img" className="fixed m-0 w-screen h-screen -z-[100]"></Image>*/}
+                    <div className="flex flex-col h-full wrap">
+                        <Header></Header>
+                        <div className="flex-1">{children}</div>
                         <Footer></Footer>
                     </div>
+                    <div className="noise"></div>
                 </RecoilRoot>
             </body>
         </html>

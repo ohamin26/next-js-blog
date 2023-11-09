@@ -2,10 +2,11 @@
 import About from '@/app/componets/element/about'
 import Skills from '@/app/componets/element/skills'
 import Project from '@/app/componets/element/project'
+import Header from './componets/layout/header'
 export default function Home() {
     return (
         <div className="items-center">
-            <div className="pt-5 pb-1" id="about">
+            <div className="p-0 m-0" id="about">
                 <About></About>
             </div>
             <div className="p-36 xs:px-16" id="skills">
